@@ -10,7 +10,7 @@
 #ifndef LED_BUILTIN
     #define LED_BUILTIN 2
 #endif
-
+#define TIME_INTERVAL 1000
 void setup()
 {
   // initialize LED digital pin as an output.
@@ -22,9 +22,10 @@ void loop()
   // turn the LED on (HIGH is the voltage level)
   digitalWrite(LED_BUILTIN, HIGH);
   // wait for a second
-  delay(10000);
+  delay(TIME_INTERVAL);
   // turn the LED off by making the voltage LOW
   digitalWrite(LED_BUILTIN, LOW);
    // wait for a second
-  delay(5000);
+  delay(2*TIME_INTERVAL);
+
 }
